@@ -18,23 +18,30 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    container:
+      image: node:16
+
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: ['chrome', 'firefox', 'edge']
+
+    services:
+      selenium:
+        image: selenium/standalone-${{ matrix.browser }}
+
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: 16
-      - name: Install dependencies
-        run: npm ci
-        
-      - name: Install Selenium
-        run: npm install @wdio/selenium-standalone-service --save-dev
-        
-      - name: Run tests
-        run: npm run test
-        
+          node-version: '16'
+          cache: 'npm'
+      - run: npm install
+      - run: npm install @wdio/selenium-standalone-service --save-dev 
+      - run: npm run test
+        env:
+          BROWSER: ${{ matrix.browser }}
+  
       - name: Install allure
         run: npm install -g allure-commandline --save-dev
     
@@ -43,7 +50,7 @@ jobs:
       
       - uses: actions/upload-artifact@master
         with:
-          name: allure-results
+          name: ${{ matrix.browser }}
           path: allure-results
           retention-days: 20
   
