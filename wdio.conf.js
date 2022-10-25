@@ -53,12 +53,18 @@ exports.config = {
         {
             maxInstances: 1,
             browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--no-sandbox', '--headless']
+            },
             acceptInsecureCerts: true
         
         },
         {
             maxInstances: 1,
             browserName: 'firefox',
+            'moz:firefoxOptions': {
+                args: ['-headless']
+            },
             acceptInsecureCerts: true
         
         }, 
@@ -141,8 +147,6 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec', ['allure', {
         outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true,
     }]],
 
     //
@@ -249,7 +253,7 @@ exports.config = {
      */
      afterTest: function(test, context, { error, result, duration, passed, retries }) {
         browser.pause(3000);
-        browser.takeScreenshot();    
+        browser.takeScreenshot();  
         browser.deleteAllCookies();
      },
 
