@@ -1,4 +1,4 @@
-name: CI
+name: Docker CI
 
 # Controls when the workflow will run
 on:
@@ -38,6 +38,6 @@ jobs:
         run: npm run docker:test
         
       - name: Stop
-        run: docker-compose "docker-compose.yml" --abort-on-container-exit	
+        run: docker-compose "docker-compose.yml" down
     
     
