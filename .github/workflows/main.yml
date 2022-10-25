@@ -29,8 +29,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      - name: Install Selenium
+        run: npm install @wdio/selenium-standalone-service --save-dev
+        
       - name: Run tests
         run: npm run test
+        
       - name: Install allure
         run: npm install -g allure-commandline --save-dev
     
