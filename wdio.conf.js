@@ -54,7 +54,7 @@ exports.config = {
             maxInstances: 1,
             browserName: 'chrome',
             'goog:chromeOptions': {
-                args: ['--no-sandbox', '--headless']
+                args: ['--headless']
             },
             acceptInsecureCerts: true
         
