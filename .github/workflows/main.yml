@@ -33,15 +33,20 @@ jobs:
         run: npm install @wdio/selenium-standalone-service --save-dev
         
       - name: Run tests
+        if: always()
+        continue-on-error: true
         run: npm run test
         
       - name: Install allure
+        if: always()
         run: npm install -g allure-commandline --save-dev
     
       - name: Reports Generate
+        if: always()
         run: npx allure generate ./allure-results --clean    
       
       - uses: actions/upload-artifact@master
+        if: always()
         with:
           name: allure-results
           path: allure-results
