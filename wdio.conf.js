@@ -100,6 +100,8 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     baseUrl: 'https://telnyx.com',
+    hostname:'localhost',
+    path:'/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 60000,
