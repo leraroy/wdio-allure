@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "header div a[href^=\"/products/\"] span, header [href^=\"/number\"] span"
-}
