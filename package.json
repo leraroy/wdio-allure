@@ -25,7 +25,7 @@
         "test:firefox": "wdio run conf/wdio.firefox.conf.js",
         "test:edge": "wdio run conf/wdio.edge.conf.js",
         "test:chrome": "wdio run conf/wdio.chrome.conf.js",
-        "report:generate": "allure generate allure-results -o allure-report --clean",
+        "report:generate": "npx allure generate allure-results -o allure-report --clean",
         "report:open": "allure open allure-report",
         "docker:test": "wdio run conf/docker.conf.js"
         
