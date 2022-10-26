@@ -49,30 +49,34 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [
-        {
-            maxInstances: 5,
-            browserName: 'chrome',
-            'goog:chromeOptions': {
-                args: ['--headless']
-            },
-            acceptInsecureCerts: true
-        
-        },
-        {
-            maxInstances: 5,
-            browserName: 'firefox',
-            'moz:firefoxOptions': {
-                args: ['-headless']
-            },
-            acceptInsecureCerts: true
-        
-        }, 
-        {
-            maxInstances: 5,
-            browserName: 'MicrosoftEdge',
-            acceptInsecureCerts: true
+    maxInstances: 3,
+    capabilities: [{
+        maxInstances: 6,
+        browserName: 'chrome',
+        acceptInsecureCerts: true,
+        'goog:chromeOptions': {
+            args:[
+                '--headless'
+            ]}
+    },
+    {
+        browserName: 'firefox',
+        maxInstances: 6,
+        'moz:firefoxOptions': {
+            args:[
+                "-headless"
+            ]
         }
+    },
+    {
+        browserName: "MicrosoftEdge",
+        maxInstances: 6,
+        "ms:edgeOptions": {
+            args:[
+                "-headless"
+            ]
+        }
+    }
 ],
     //
     // ===================
