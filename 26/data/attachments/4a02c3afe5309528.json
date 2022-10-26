@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[aria-label*=\"close\"]~div button\"}\n  (Session info: headless MicrosoftEdge=106.0.1370.47)",
+  "stacktrace": "#0 0x5607b29beb13 <unknown>\n#1 0x5607b279f124 <unknown>\n#2 0x5607b27dac79 <unknown>\n#3 0x5607b27daf51 <unknown>\n#4 0x5607b28116c4 <unknown>\n#5 0x5607b27f92fd <unknown>\n#6 0x5607b280f626 <unknown>\n#7 0x5607b27f90f3 <unknown>\n#8 0x5607b27cebde <unknown>\n#9 0x5607b27cfd71 <unknown>\n#10 0x5607b29fd228 <unknown>\n#11 0x5607b29ff13a <unknown>\n#12 0x5607b29febaa <unknown>\n#13 0x5607b29ff765 <unknown>\n#14 0x5607b29ebeac <unknown>\n#15 0x5607b29ffaae <unknown>\n#16 0x5607b29e196a <unknown>\n#17 0x5607b2a1ac18 <unknown>\n#18 0x5607b2a1adc6 <unknown>\n#19 0x5607b2a342c5 <unknown>\n#20 0x7f27cebc6609 <unknown>\n"
+}
