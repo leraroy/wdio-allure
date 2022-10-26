@@ -17,7 +17,7 @@ Configuration files for different project browsers are located here:
 
 - Download and install Node.JS ( at least 16.X )
 - Install Visual Studio Code
-- Clone and checkout the github project
+- Clone and checkout the github project 
 - Go to the terminal and execute "npm install" command
 
 ### How to run the tests on windows
