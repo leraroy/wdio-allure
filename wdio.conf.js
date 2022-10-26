@@ -43,16 +43,16 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 3,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-   // maxInstances: 3,
     capabilities: [{
         maxInstances: 1,
-        browserName: 'chrome',        
+        browserName: 'chrome',
+        acceptInsecureCerts: true,        
         'goog:chromeOptions': {
             args:[
                 '--headless'
@@ -61,6 +61,7 @@ exports.config = {
     {
         browserName: 'firefox',
         maxInstances: 1,
+        acceptInsecureCerts: true,
         'moz:firefoxOptions': {
             args:[
                 "-headless"
@@ -70,6 +71,7 @@ exports.config = {
     {
         browserName: "MicrosoftEdge",
         maxInstances: 1,
+        acceptInsecureCerts: true,
         "ms:edgeOptions": {
             args:[
                 "-headless"
@@ -84,7 +86,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'warn',
     //
     // Set specific log levels per logger
     // loggers:

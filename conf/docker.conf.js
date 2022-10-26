@@ -2,6 +2,7 @@ const { config } = require("../wdio.conf")
 
 const dockerConfig = {
     ...config,
+    waitforTimeout: 80000,
     services: ['docker'],
     capabilities: [
         {
