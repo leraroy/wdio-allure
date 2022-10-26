@@ -6,10 +6,11 @@ To manage project customized config files are used so user is able to run projec
 
 Configuration files for different project browsers are located here:
 <p>
-[Chrome](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.chrome.conf.js)<br>
-[Microsoft Edge](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.edge.conf.js)<br>
-[Firefox](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.firefox.conf.js)<br>
+[Chrome](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.chrome.conf.js) <br>
+[Microsoft Edge](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.edge.conf.js) <br>
+[Firefox](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.firefox.conf.js) <br>
 </p>
+
 ## Setup
 
 ### Install software and check out the project
