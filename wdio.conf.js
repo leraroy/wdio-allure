@@ -55,7 +55,7 @@ exports.config = {
         acceptInsecureCerts: true,        
         'goog:chromeOptions': {
             args:[
-                '--headless'
+              '--headless', '--start-maximized', '--no-sandbox', '--disable -gpu', '--window-size=1920,780', '--allow-insecure-localhost'
             ]}
     },
     {
@@ -64,7 +64,7 @@ exports.config = {
         acceptInsecureCerts: true,
         'moz:firefoxOptions': {
             args:[
-                "-headless"
+                '--headless', '--start-maximized', '--no-sandbox', '--disable -gpu', '--window-size=1920,780', '--allow-insecure-localhost'
             ]
         }
     },
@@ -74,7 +74,7 @@ exports.config = {
         acceptInsecureCerts: true,
         "ms:edgeOptions": {
             args:[
-                "-headless"
+                '--headless', '--start-maximized', '--no-sandbox', '--disable -gpu', '--window-size=1920,780', '--allow-insecure-localhost'
             ]
         }
     }
