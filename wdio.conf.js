@@ -51,7 +51,7 @@ exports.config = {
     //
     capabilities: [
         {
-            maxInstances: 1,
+            maxInstances: 5,
             browserName: 'chrome',
             'goog:chromeOptions': {
                 args: ['--headless']
@@ -60,7 +60,7 @@ exports.config = {
         
         },
         {
-            maxInstances: 1,
+            maxInstances: 5,
             browserName: 'firefox',
             'moz:firefoxOptions': {
                 args: ['-headless']
@@ -69,7 +69,7 @@ exports.config = {
         
         }, 
         {
-            maxInstances: 1,
+            maxInstances: 5,
             browserName: 'MicrosoftEdge',
             acceptInsecureCerts: true
         }
