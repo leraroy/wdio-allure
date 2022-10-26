@@ -24,6 +24,7 @@ const dockerConfig = {
     ],
     logLevel: 'warn',
     port: 4444,
+    hostname:'localhost',
     path:'/',
 };
 exports.config = dockerConfig;
