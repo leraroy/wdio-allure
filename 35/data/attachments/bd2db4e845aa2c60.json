@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[type=\"submit\"]\"}\n  (Session info: headless MicrosoftEdge=106.0.1370.47)",
+  "stacktrace": "#0 0x5632c0e47b13 <unknown>\n#1 0x5632c0c28124 <unknown>\n#2 0x5632c0c63c79 <unknown>\n#3 0x5632c0c63f51 <unknown>\n#4 0x5632c0c9a6c4 <unknown>\n#5 0x5632c0c822fd <unknown>\n#6 0x5632c0c98626 <unknown>\n#7 0x5632c0c820f3 <unknown>\n#8 0x5632c0c57bde <unknown>\n#9 0x5632c0c58d71 <unknown>\n#10 0x5632c0e86228 <unknown>\n#11 0x5632c0e8813a <unknown>\n#12 0x5632c0e87baa <unknown>\n#13 0x5632c0e88765 <unknown>\n#14 0x5632c0e74eac <unknown>\n#15 0x5632c0e88aae <unknown>\n#16 0x5632c0e6a96a <unknown>\n#17 0x5632c0ea3c18 <unknown>\n#18 0x5632c0ea3dc6 <unknown>\n#19 0x5632c0ebd2c5 <unknown>\n#20 0x7fc279d8e609 <unknown>\n"
+}
