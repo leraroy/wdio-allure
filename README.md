@@ -5,11 +5,11 @@ This repo contains tests written with WebdriverIO for "telnyx.com" website.
 To manage project customized config files are used so user is able to run project without making any change in the code
 
 Configuration files for different project browsers are located here:
-<p>
+
 [Chrome](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.chrome.conf.js) <br>
 [Microsoft Edge](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.edge.conf.js) <br>
 [Firefox](https://github.com/leraroy/wdio-allure/blob/master/conf/wdio.firefox.conf.js) <br>
-</p>
+
 
 ## Setup
 
