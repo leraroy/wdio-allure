@@ -53,28 +53,28 @@ exports.config = {
     capabilities: [{
         maxInstances: 1,
         browserName: 'chrome',        
-        // 'goog:chromeOptions': {
-        //     args:[
-        //         '--headless'
-        //     ]}
+        'goog:chromeOptions': {
+            args:[
+                '--headless'
+            ]}
     },
     {
         browserName: 'firefox',
         maxInstances: 1,
-        // 'moz:firefoxOptions': {
-        //     args:[
-        //         "-headless"
-        //     ]
-        // }
+        'moz:firefoxOptions': {
+            args:[
+                "-headless"
+            ]
+        }
     },
     {
         browserName: "MicrosoftEdge",
         maxInstances: 1,
-        // "ms:edgeOptions": {
-        //     args:[
-        //         "-headless"
-        //     ]
-        // }
+        "ms:edgeOptions": {
+            args:[
+                "-headless"
+            ]
+        }
     }
 ],
     //

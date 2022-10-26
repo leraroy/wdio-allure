@@ -5,19 +5,19 @@ const dockerConfig = {
     services: ['docker'],
     capabilities: [
         {
-            maxInstances: 5,
+            maxInstances: 1,
             browserName: 'chrome',
             acceptInsecureCerts: true
 
         },
         {
-            maxInstances: 5,
+            maxInstances: 1,
             browserName: 'firefox',
             acceptInsecureCerts: true
 
         },
         {
-            maxInstances: 5,
+            maxInstances: 1,
             browserName: 'MicrosoftEdge',
             acceptInsecureCerts: true
         }
