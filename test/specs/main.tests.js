@@ -52,7 +52,7 @@ describe('Main page', () => {
         for (let i = 0; i < await MainPage.productsList.length; i++) {
             await moveToElmentAndWait(MainPage.listHeader[0], MainPage.productsList[i]);
             MainPage.productsList[i].click();
-            await browser.pause(2000);
+            await browser.pause(3000);
             listTitle.push(await browser.getTitle());
             await browser.back();
         }

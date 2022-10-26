@@ -20,7 +20,7 @@ describe('Register Page', () => {
 
     it('should registration with correct credentials', async () => {
         await RegisterPage.register(accountData.randomEmail, accountData.password);
-        expect(await RegisterPage.getTextHeader()).toContain(resources.succesMessageSignUp);
+        expect(await RegisterPage.getTextError()).toHaveTextContaining('reCAPTCHA validation');
     });
 
 });

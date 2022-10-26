@@ -49,32 +49,32 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    maxInstances: 3,
+   // maxInstances: 3,
     capabilities: [{
-        maxInstances: 6,
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-            args:[
-                '--headless'
-            ]}
+        maxInstances: 1,
+        browserName: 'chrome',        
+        // 'goog:chromeOptions': {
+        //     args:[
+        //         '--headless'
+        //     ]}
     },
     {
         browserName: 'firefox',
-        maxInstances: 6,
-        'moz:firefoxOptions': {
-            args:[
-                "-headless"
-            ]
-        }
+        maxInstances: 1,
+        // 'moz:firefoxOptions': {
+        //     args:[
+        //         "-headless"
+        //     ]
+        // }
     },
     {
         browserName: "MicrosoftEdge",
-        maxInstances: 6,
-        "ms:edgeOptions": {
-            args:[
-                "-headless"
-            ]
-        }
+        maxInstances: 1,
+        // "ms:edgeOptions": {
+        //     args:[
+        //         "-headless"
+        //     ]
+        // }
     }
 ],
     //
@@ -113,7 +113,7 @@ exports.config = {
     path:'/',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 60000,
+    waitforTimeout: 80000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
